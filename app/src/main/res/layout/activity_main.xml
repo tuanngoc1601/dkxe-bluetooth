@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/red_circle"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/btnTien"
+        android:layout_below="@id/imgStatus"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/arrow_up"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTien"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnTrai"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/arrow_left"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/circle_black"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/btnPhai"
+            android:layout_width="97dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/arrow_right"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLui"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/arrow_down"
+        android:layout_below="@id/ll1"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ListView
+        android:id="@+id/lvDevice"
+        android:layout_below="@id/btnLui"
+        android:layout_above="@id/btnConnect"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:text="Kết nối Bluetooth"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="#F44336"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>
